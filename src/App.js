@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 function Header() {
@@ -7,21 +6,29 @@ function Header() {
   </header>
 }
 
+function Nav() {
+  return <nav>
+    <ol>
+      <li><a href="/">HTML</a></li>
+      <li><a href="/">CSS</a></li>
+      <li><a href="/">JavaScript</a></li>
+    </ol>
+  </nav>
+}
+
+function Article() {
+  return <article>
+    <h2>Welcome</h2>
+    Hello, WEB!
+  </article>
+}
+
 function App() {
   return (
     <div>
       <Header></Header>
-      <nav>
-        <ol>
-          <li><a href="/">HTML</a></li>
-          <li><a href="/">CSS</a></li>
-          <li><a href="/">JavaScript</a></li>
-        </ol>
-      </nav>
-      <article>
-        <h2>Welcome</h2>
-        Hello, WEB!
-      </article>
+      <Nav></Nav>
+      <Article></Article>
     </div>
   );
 }
